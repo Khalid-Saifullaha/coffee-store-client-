@@ -20,7 +20,7 @@ const SignUp = () => {
 
         const newUser = { name, email, createdAt };
         // save new user info to the database
-        fetch("http://localhost:5000/users", {
+        fetch("https://coffee-store-server-indol-nine.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -40,9 +40,9 @@ const SignUp = () => {
   };
   return (
     <div className="hero bg-base-200 min-h-screen">
-      <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className="hero-content flex-col ">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
+          <h1 className="text-5xl font-bold">Sign Up now!</h1>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
           <form onSubmit={handleSignUp} className="card-body">
@@ -95,6 +95,7 @@ const SignUp = () => {
             </p>
           </form>
         </div>
+        +
       </div>
     </div>
   );
