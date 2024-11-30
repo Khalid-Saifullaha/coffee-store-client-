@@ -13,6 +13,9 @@ const Header = () => {
       <li>
         <NavLink to="/signup">Sign Up</NavLink>
       </li>
+      <li>
+        <NavLink to="/users">Users</NavLink>
+      </li>
     </>
   );
 
